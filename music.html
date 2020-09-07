@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Student Name: Sushmita Ravindranath Punneshetty   -->
+<html lang="en">
+  <head>
+  <style>
+	body {
+		background-color: #D4E6F1 ;
+	}
+	
+	.search{
+	font-family: arial, sans-serif;
+	  text-align: center;
+      display: block; 
+      margin: auto;
+      width: 20%;
+      padding:8px;
+      border-radius: 5px;
+	  color: #1A5276;
+    }
+	
+	.button{
+	  font-family: arial, sans-serif;
+	  text-align: center;
+      display: block; 
+      margin: auto;
+      width: 10%;
+      padding:12px;
+      border-radius: 12px;
+	  background-color: #1A5276;
+	  color: #D4E6F1;
+	  border: 2px solid #008CBA
+    }
+	
+	.searchArtist{
+		
+		position: absolute;
+		left: 0;
+		top: 5%;
+		width: 100%;
+		text-align: center
+    }
+	
+	input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #1A5276;
+  color: #D4E6F1;
+  border-radius: 4px;
+}
+	
+	
+	table {
+    font-family: arial, sans-serif;
+    align = middle;
+	padding: 16px;
+	color: #1A5276;
+	text-align: justify;
+    }	
+
+    h2{
+      font-family: arial, sans-serif;
+      color:#1A5276 ;
+	  align : middle;
+	  
+	  
+    }	
+	
+	
+  </style
+    <title class="t"></title><br>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="music.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+	<div class="searchArtist">
+       <label class="search">Artist name: <br><input type="text" id="form-input"/></label> <br>
+       <input class="button" type="button" onclick="sendRequest();" value="Display Info"/>
+	</div>
+    </form>
+	<br><br><br><br><br>
+    <div id="metadata" style="width: 80%; float: left;">&nbsp;</div>
+	<br><br>
+	<div id="similarArtists" style="width: 19%; float: right;">&nbsp;</div>
+	<br><br>
+	<div id="topAlbums">&nbsp;</div>
+	
+	
+  </body>
+</html>
